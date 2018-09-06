@@ -34,11 +34,10 @@ module.exports = {
       },
     ],
   },
-  resolve: {
-    extensions: ['.js', '.ts'],
-  },
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: 'index.html'
+    }),
     new VueLoaderPlugin(),
   ],
 };
