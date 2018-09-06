@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "commonjs",
+    "module": "es2015",
+    "moduleResolution": "node",
     "allowJs": true,
     "sourceMap": true,
     "rootDir": "./",
@@ -17,7 +18,10 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "baseUrl": "./",
+    "isolatedModules": false,
     "allowSyntheticDefaultImports": true
-  }
+  },
+  "include": [
+    "./src/**/*"
+  ]
 }
