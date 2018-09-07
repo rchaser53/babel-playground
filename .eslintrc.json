@@ -1,6 +1,10 @@
 {
-  "parser": "typescript-eslint-parser",
+  "parser": "vue-eslint-parser",
   "extends": [
    "eslint:recommended"
-  ]
+  ],
+  "parserOptions": {
+      "parser": "typescript-eslint-parser",
+      "sourceType": "module"
+  }
 }
