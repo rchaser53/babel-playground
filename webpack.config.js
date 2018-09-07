@@ -29,11 +29,11 @@ module.exports = {
       {
         test: /\.ts$/,
         include: [path.resolve(__dirname, 'src')],
-        loader: 'babel-loader',
-        // loader: 'ts-loader',
-        // options: {
-        //   appendTsSuffixTo: [/\.vue$/],
-        // },
+        // loader: 'babel-loader',
+        loader: 'ts-loader',
+        options: {
+          appendTsSuffixTo: [/\.vue$/],
+        },
         exclude: /node_modules|vue\/src/,
       },
       {
