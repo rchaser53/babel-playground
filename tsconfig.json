@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
+    "lib": ["es2015", "es2016", "dom", "es2017.object"],
     "target": "es5",
     "module": "es2015",
     "moduleResolution": "node",
     "allowJs": true,
+    "experimentalDecorators": true,
     "sourceMap": true,
     "rootDir": "./",
     "skipLibCheck": true,

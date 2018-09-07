@@ -3,6 +3,9 @@
   "extends": [
    "eslint:recommended"
   ],
+  "env": {
+    "es6": true
+  },
   "parserOptions": {
       "parser": "typescript-eslint-parser",
       "sourceType": "module"
