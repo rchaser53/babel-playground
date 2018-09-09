@@ -4,23 +4,17 @@
 
 <script lang="ts">
 import Vue from 'vue';
-// eslint-disable-next-line no-unused-vars
-import Component from 'vue-class-component';
+import Component from 'vue-class-component';    // eslint-disable-line
 
-@Component({
-  async mounted() {
-    try {
-      const hoge = { a: 12, b: 33 };
-      const hogehoge = { ...hoge };
-      console.log(hogehoge);
-    } catch(err) {
-
-    }
-  }
-})
-export default class TestClass extends Vue {
-  hoge() {
-    return Promise.resolve();
-  }
+@Component
+export class TestClass extends Vue {
+  a: number = 12;
+  hoge = hoge;
 }
+
+const hoge = function(this: TestClass): number {
+  return this.a;
+}
+
+export default TestClass;
 </script>

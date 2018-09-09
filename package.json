@@ -7,6 +7,8 @@
     "debug": "node inspect ./node_modules/.bin/eslint ./test.js",
     "eslint": "eslint test.js",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build:debug": "node inspect ./node_modules/.bin/webpack",
+    "build": "webpack",
     "watch": "webpack-dev-server"
   },
   "repository": {
