@@ -36,12 +36,12 @@ module.exports = {
         },
         exclude: /node_modules|vue\/src/,
       },
-      {
-        enforce: 'pre',
-        test: /\.(ts|vue)$/,
-        loader: 'eslint-loader',
-        exclude: /node_modules/
-      },
+      // {
+      //   enforce: 'pre',
+      //   test: /\.(ts|vue)$/,
+      //   loader: 'eslint-loader',
+      //   exclude: /node_modules/
+      // },
     ],
   },
   plugins: [

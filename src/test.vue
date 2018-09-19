@@ -1,19 +1,23 @@
 <template>
-  <div>vue dayo-</div>
+  <div>
+    <child :prop-a="11"></child>
+    <div>vue dayo-</div>
+  </div>
+  
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import Component from 'vue-class-component';    // eslint-disable-line
+import Child from './child.vue';
 
-@Component
+@Component({
+  components: {
+    child: Child
+  }
+})
 export class TestClass extends Vue {
   a: number = 12;
-  hoge = hoge;
-}
-
-const hoge = function(this: TestClass): number {
-  return this.a;
 }
 
 export default TestClass;
