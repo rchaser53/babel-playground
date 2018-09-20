@@ -1,5 +1,6 @@
 const path = require('path');
 
+const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -49,5 +50,6 @@ module.exports = {
       template: 'index.html'
     }),
     new VueLoaderPlugin(),
+    new HardSourceWebpackPlugin(),
   ],
 };
